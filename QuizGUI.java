@@ -96,7 +96,7 @@ public class QuizGUI extends JFrame implements ActionListener {
                 return i + 1;
             }
         }
-        return -1; // nothing selected
+        return -1;
     }
 
     public void actionPerformed(ActionEvent e) {
