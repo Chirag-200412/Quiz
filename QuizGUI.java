@@ -25,12 +25,10 @@ public class QuizGUI extends JFrame implements ActionListener {
         setLayout(new BorderLayout(10, 10));
         setLocationRelativeTo(null);
 
-        // Question panel
         questionLabel = new JLabel("Question will appear here");
         questionLabel.setFont(new Font("Arial", Font.BOLD, 16));
         add(questionLabel, BorderLayout.NORTH);
 
-        // Options panel
         JPanel optionsPanel = new JPanel(new GridLayout(4, 1, 10, 10));
         bg = new ButtonGroup();
         for (int i = 0; i < 4; i++) {
@@ -50,7 +48,6 @@ public class QuizGUI extends JFrame implements ActionListener {
         btnPanel.add(submitBtn);
         add(btnPanel, BorderLayout.SOUTH);
 
-        // Load questions from MySQL
         questions = fetchQuestionsFromDB();
         if (!questions.isEmpty()) {
             loadQuestion(currentQIndex);
