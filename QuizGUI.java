@@ -38,7 +38,6 @@ public class QuizGUI extends JFrame implements ActionListener {
         }
         add(optionsPanel, BorderLayout.CENTER);
 
-        // Buttons panel
         JPanel btnPanel = new JPanel();
         nextBtn = new JButton("Next");
         submitBtn = new JButton("Submit");
